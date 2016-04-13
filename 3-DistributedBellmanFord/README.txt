@@ -77,5 +77,5 @@ ROUTE UPDATE message:
 
 LINKDOWN message:
 
--- if a link to a neighbor is destroyed by the LINKDOWN command, we create an empty message as a LINKDOWN message. When the neighbor receive a message, it checks whether the message is empty. If so, then this message is a LINKDOWN message and thus this neighbor knows that the link from the source node of this message is destroyed. Otherwise, this message is a ROUTE UPDATE message.
+-- If a link to a neighbor is destroyed by the LINKDOWN command, we create an empty message as a LINKDOWN message. When the neighbor receive a message, it checks whether the message is empty. If so, then this message is a LINKDOWN message and thus this neighbor knows that the link from the source node of this message is destroyed. Otherwise, this message is a ROUTE UPDATE message.
 -- LINKDOWN message format: <Node, Distance>, where Node = <"", 0>, Distance = <0, null>.
